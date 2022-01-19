@@ -101,3 +101,56 @@ nav{
         z-index: 2;
     }
 }
+
+// THIRD PAGE
+.third-page{
+    position: relative;
+    padding: 0% 15%;
+
+    .product-text-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        min-height: 100vh;
+        background: white;
+    }
+
+    .phone-size{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .pro-size{
+        text-align: right;
+    }
+    .max-size{
+        text-align: left;
+    }
+
+    .product-images{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        .large-phone{
+            position: relative;
+            transform: translateX(40%) scale(0.7);
+            z-index: 1;
+        }
+        .small-phone{
+            position: relative;
+            z-index: 2;
+            transform: translateX(-40%) scale(0.7);
+        }
+    }
+
+    .retina-line{
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%, -8%);
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}
