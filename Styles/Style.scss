@@ -212,3 +212,40 @@ nav{
         }
     }
 }
+
+// Fifth Page
+.fifth-page{
+    min-height: 100vh;
+
+    .product-video{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .product-info-container{
+        position: relative;
+        z-index: 2;
+        color: white;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: space-between;
+        padding: 0% 8rem;
+
+        .left-info,.right-info{
+            width: 20%;
+            h3{
+                color: rgb(193,193,193);
+                padding: 3rem 0rem;
+                span{
+                    color: rgb(210,210,210);
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+}
