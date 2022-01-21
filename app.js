@@ -138,3 +138,49 @@ const tlSplitPin = gsap.timeline({
     end: "100%",
   },
 });
+
+// Carousel
+const swatches = document.querySelectorAll(".swatches img");
+const gallery = document.querySelector(".phone-gallery");
+const slides = document.querySelectorAll(".phone-gallery-container");
+
+let currentSwatch = "blue";
+let topIndex = 2;
+
+swatches.forEach((swatch, index) => {
+  //console.log(slides[index]);
+  const coordinates = slides[index].getBoundingClientRect().left;
+  //console.log(coordinates);
+
+  swatch.addEventListener("click", (e) => {
+    let swatchName = e.target.getAttribute("swatch");
+    //console.log(swatchName);
+    let closeUp = document.querySelector("." + swatchName);
+
+    // Check if we are on the same watch
+    if (currentSwatch === swatchName) return;
+
+    gsap.set(closeUp, { zIndex: topIndex });
+    gsap.fromTo(
+      closeUp,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+      }
+    );
+
+    // Gallery
+    gsap.to(gallery, {
+      x: -coordinates,
+      duration: 1,
+      ease: "back.out(1)",
+    });
+
+    // Increment xIndex++
+    topIndex++;
+    currentSwatch = swatchName;
+  });
+});
