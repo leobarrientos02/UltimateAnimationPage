@@ -173,7 +173,7 @@ nav{
             display: flex;    
             align-self: flex-start;
             img{
-                transform: scale(0.6);
+                transform: scale(0.55);
             }
             .phone-gallery-container{
                 min-width: 50vw;
@@ -184,6 +184,7 @@ nav{
         }
 
         .swatch-container{
+            margin-bottom: 5rem;
             text-align: center;
             .swatches{
                 img{

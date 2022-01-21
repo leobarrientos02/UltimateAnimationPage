@@ -78,7 +78,7 @@ const tlSplit = gsap.timeline({
   scrollTrigger: {
     trigger: ".third-page",
     start: "-30%",
-    end: "20%",
+    end: "10%",
     markers: true,
     scrub: true,
   },
