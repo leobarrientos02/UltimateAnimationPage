@@ -234,8 +234,8 @@ nav .buy-button:hover {
 }
 
 .fourth-page .purchase-left .phone-gallery img {
-  -webkit-transform: scale(0.55);
-          transform: scale(0.55);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .fourth-page .purchase-left .phone-gallery .phone-gallery-container {
@@ -252,7 +252,8 @@ nav .buy-button:hover {
 }
 
 .fourth-page .purchase-left .swatch-container {
-  margin-bottom: 5rem;
+  position: relative;
+  bottom: 10%;
   text-align: center;
 }
 
@@ -278,8 +279,8 @@ nav .buy-button:hover {
   position: absolute;
   bottom: 0%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%) scale(0.6);
-          transform: translate(-50%, 0%) scale(0.6);
+  -webkit-transform: translate(-50%, 0%) scale(0.55);
+          transform: translate(-50%, 0%) scale(0.55);
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }

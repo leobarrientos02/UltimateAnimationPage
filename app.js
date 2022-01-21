@@ -34,10 +34,10 @@ const tlIntro = gsap.timeline({
 const tlH = gsap.timeline({
   scrollTrigger: {
     trigger: ".second-page",
-    markers: {
-      startColor: "blue",
-      endColor: "blue",
-    },
+    // markers: {
+    //   startColor: "blue",
+    //   endColor: "blue",
+    // },
     scrub: true,
     start: "-40%",
     end: "40%",
@@ -58,10 +58,10 @@ tlH.fromTo(
 const tlHRemove = gsap.timeline({
   scrollTrigger: {
     trigger: ".second-page",
-    markers: {
-      startColor: "pink",
-      endColor: "pink",
-    },
+    // markers: {
+    //   startColor: "pink",
+    //   endColor: "pink",
+    // },
     scrub: true,
     start: "-20%",
     end: "60%",
@@ -77,9 +77,9 @@ tlHRemove.to(".highlight", {
 const tlSplit = gsap.timeline({
   scrollTrigger: {
     trigger: ".third-page",
-    start: "-30%",
+    start: "-40%",
     end: "10%",
-    markers: true,
+    // markers: true,
     scrub: true,
   },
 });
@@ -184,3 +184,79 @@ swatches.forEach((swatch, index) => {
     currentSwatch = swatchName;
   });
 });
+
+// PAGE 5 VIDEO SCROLL ANIMATION
+const tlVideo = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".fifth-page",
+    start: "0%",
+    end: "150%",
+    scrub: true,
+    pin: true,
+  },
+});
+tlVideo.fromTo(
+  ".product-video",
+  {
+    currentTime: 0,
+  },
+  {
+    currentTime: 3,
+    duration: 1,
+  }
+);
+
+tlVideo.fromTo(
+  ".product-info-container h3",
+  {
+    opacity: 0,
+  },
+  {
+    opacity: 1,
+    stagger: 0.25,
+    duration: 0.5,
+  },
+  "<"
+);
+
+// SIXTH PAGE
+const tlParallax = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sixth-page",
+    start: "-20%",
+    end: "50%",
+    scrub: true,
+  },
+});
+
+tlParallax.fromTo(
+  ".photo-description",
+  {
+    y: 0,
+  },
+  {
+    y: -100,
+  }
+);
+
+tlParallax.fromTo(
+  ".portrait-container",
+  {
+    y: 0,
+  },
+  {
+    y: -180,
+  },
+  "<"
+);
+
+tlParallax.fromTo(
+  ".phone-video",
+  {
+    y: 0,
+  },
+  {
+    y: -200,
+  },
+  "<"
+);
