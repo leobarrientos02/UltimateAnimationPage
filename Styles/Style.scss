@@ -105,7 +105,7 @@ nav{
 // THIRD PAGE
 .third-page{
     position: relative;
-    padding: 0% 15%;
+    padding: 0% 10%;
 
     .product-text-container{
         display: flex;
@@ -168,6 +168,7 @@ nav{
         align-items: center;
         justify-content: center;
         flex: 1;
+        background: white;
         .phone-gallery{
             display: flex;    
             align-self: flex-start;
