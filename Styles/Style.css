@@ -391,7 +391,7 @@ nav .buy-button:hover {
   border-radius: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
