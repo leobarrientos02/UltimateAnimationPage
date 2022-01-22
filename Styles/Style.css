@@ -486,7 +486,6 @@ nav .buy-button:hover {
             transform: translate(-50%, -30%);
     font-size: 0.7rem;
     text-align: center;
-    font-weight: bold;
   }
   .fourth-page {
     min-height: 100vh;
@@ -599,11 +598,57 @@ nav .buy-button:hover {
   }
   .fifth-page .product-info-container .left-info h3, .fifth-page .product-info-container .right-info h3 {
     color: #c1c1c1;
-    padding: 1.5rem 0rem;
+    padding: 2rem 0rem;
   }
   .fifth-page .product-info-container .left-info h3 span, .fifth-page .product-info-container .right-info h3 span {
     color: #d2d2d2;
     font-size: 1.5rem;
+  }
+  .sixth-page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sixth-page .portrait {
+    height: 50vh;
+  }
+  .sixth-page .photo-title {
+    font-size: 1rem;
+  }
+  .sixth-page .photo-subtitle {
+    font-size: 1.5rem;
+  }
+  .sixth-page .phone-video {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    z-index: 2;
+    -webkit-transform: translate(-30%, 0%);
+            transform: translate(-30%, 0%);
+  }
+  .sixth-page .phone-video img, .sixth-page .phone-video video {
+    position: absolute;
+  }
+  .sixth-page .phone-video img {
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .sixth-page .phone-video video {
+    left: 1rem;
+    bottom: 1rem;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    border-radius: 2rem;
   }
 }
 /*# sourceMappingURL=Style.css.map */
