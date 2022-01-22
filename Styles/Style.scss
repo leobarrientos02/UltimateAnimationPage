@@ -28,6 +28,10 @@ nav{
         font-size: 0.9rem;
     }
 
+    .nav-links-mobile{
+        display: none;
+    }
+
     .nav-links{
         a,button{
             margin-left: 2rem;
@@ -301,4 +305,190 @@ nav{
             border-radius: 2rem;
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        min-height: 8vh;
+        .logo{
+            width: 100%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .nav-links{
+            display: none;
+        }
+        .nav-links-mobile{
+            display:block;
+            a{
+                font-size: 0.8rem;
+                margin-left: 0.75rem;
+            }
+            .button{
+                padding: .25rem 0rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    // Second Page
+    .second-page{
+        .second-text{
+            padding: 5% 20%;
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    // THIRD PAGE
+    .third-page{
+    padding: 0%;
+    min-height: 100vh;
+    width: 100%;
+
+    .product-text-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        min-height: 100vh;
+        background: white;
+    }
+
+
+    .product-images{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        .large-phone{
+            position: relative;
+            transform: translateX(25%) scale(0.5);
+            z-index: 1;
+        }
+        .small-phone{
+            position: relative;
+            z-index: 2;
+            transform: translate(-25%, -105%) scale(0.5);
+        }
+    }
+
+    .retina-line{
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        font-size: 0.7rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    }
+    // FOURTH PAGE
+    .fourth-page{
+    min-height: 100vh;
+
+    .purchase-left{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background: white;
+        .phone-gallery{
+            display: flex;    
+            align-self: flex-start;
+            img{
+                transform: translateX(-25%) scale(0.45);
+            }
+            .phone-gallery-container{
+                min-width: 50vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .swatch-container{
+            position: relative;
+            bottom: 10%;
+            text-align: center;
+            .swatches{
+                img{
+                    padding: 0.5rem 0.3rem;
+                    cursor: pointer;
+                }
+            }
+            span{
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+
+    .purchase-right{
+        min-width: 50vw;
+        flex: 1;
+        position: relative;
+        background: black;
+
+        img{
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%) scale(0.3);
+            transform-origin: bottom;
+        }
+    }
+    .blue{
+        z-index: 1;
+    }
+    }
+    // FIFTH PAGE
+    .fifth-page{
+        min-height: 100vh;
+        background: black;
+        .product-video{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    
+        .product-info-container{
+            position: relative;
+            z-index: 2;
+            color: white;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: space-between;
+            padding: 0% 4rem;
+    
+            .left-info,.right-info{
+                width: 20%;
+                h3{
+                    color: rgb(193,193,193);
+                    padding: 1.5rem 0rem;
+                    span{
+                        color: rgb(210,210,210);
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    
+    }
+    
 }
